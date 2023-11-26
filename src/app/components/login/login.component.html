@@ -29,7 +29,7 @@
           <mat-icon matSuffix>password</mat-icon>
        </mat-form-field>
  
-       <button [disabled]="!credentialValidation()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
+       <button [disabled]="!credentialValidation()" (click)="logar()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
     </form>
  
  </div>
