@@ -16,7 +16,6 @@ export class AuthService {
   ) { }
 
   authenticate(creds: Credentials) {
-    console.log(creds)
     return this.http.post(API_CONFIG.baseUrl + '/login', creds, {
       observe: 'response',
       responseType: 'text'
